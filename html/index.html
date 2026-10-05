@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosa Reports</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app" class="hidden">
+        <div class="panel">
+            <div class="header">
+                <div>
+                    <div class="title">STAFF REPORTS</div>
+                    <div class="subtitle"> Reports Management</div>
+                </div>
+
+                <div class="header-right">
+                    <div class="counter">
+                        <span id="reportCount">0</span> ACTIVE
+                    </div>
+
+                    <button class="close" id="closeBtn">×</button>
+                </div>
+            </div>
+
+            <div id="reports" class="reports"></div>
+
+            <div id="empty" class="empty hidden">
+                <div class="empty-icon">✓</div>
+                <div class="empty-title">No Active Reports</div>
+                <div class="empty-text">There are currently no player reports.</div>
+            </div>
+        </div>
+
+        <audio id="reportSound" preload="auto">
+            <source src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg" type="audio/ogg">
+        </audio>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
